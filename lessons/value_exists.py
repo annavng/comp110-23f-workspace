@@ -1,10 +1,9 @@
-"""Practice for exam."""
 
-def value_exists(value: dict[str, int], arg: int) -> bool:
-    """Return true if val is in value."""
-    exists: bool = False
-    for element in value: 
-        if value[element] == arg:
-            exists = True 
-        return exists 
-    
+def value_exists(test_dict: dict[str, int], test_val: int) -> bool:
+    i: int = 0
+    exist: bool = False
+    while i < len(test_dict):
+        if test_dict[i] == test_val:
+            exist = True
+        i += 1
+    return exist

@@ -1,12 +1,10 @@
-"""Practice for exam."""
-
-def short_words(my_list: list[str]) -> list[str]:
+def short_words(arg: list[str]) -> list[str]:
     """Returns list of words that are shorter than 5 characters."""
-    char_length: int = 5
-    empty_list: list[str] = []
-    for elem in my_list:
-        if elem > 5:
-            print(f"{elem} is too long!")
-        else: 
-            empty_list = empty_list + elem 
-    return empty_list
+    new: list[str] = []
+    i: int = 0
+    for elem in arg:
+        if arg[i] > 5:
+            print(f"{arg[i]} is too long!")
+        else:
+            new.append(arg[i])
+    return new
